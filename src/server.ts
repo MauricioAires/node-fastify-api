@@ -1,12 +1,15 @@
 import fastify from 'fastify'
+import { knex } from './database'
 
 const app = fastify()
 
 // GET POST PUT PATCH DELETE
 // o primeiro parâmetro apos apos a barra é o RECURSO!
 
-app.get('/hello', () => {
-  return 'Hello World!'
+app.get('/hello', async () => {
+  const test = await knex('sqlite_schema').select('*')
+
+  return test
 })
 
 app

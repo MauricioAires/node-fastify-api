@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
-    "rocketseat"
+    "rocketseat",
+    "sqlite"
   ],
   "editor.codeActionsOnSave": {
     // Corrigir erros de lint quando salvar o arquivo
