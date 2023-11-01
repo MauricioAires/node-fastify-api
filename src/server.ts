@@ -1,22 +1,21 @@
-import fastify from "fastify"
+import fastify from 'fastify'
 
 const app = fastify()
 
 // GET POST PUT PATCH DELETE
 // o primeiro parâmetro apos apos a barra é o RECURSO!
 
-app.get('/hello', (req, res) => {
+app.get('/hello', () => {
   return 'Hello World!'
 })
 
-
-app.listen({
-  port: 3333
-}).then(() => {
-  console.log('HTTP server running on port 3333')
-})
-
-
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
+    console.log('HTTP server running on port 3333')
+  })
 
 /**
  *  A lib tsx deve ser utilizada apenas em ambiente de desenvolvimento

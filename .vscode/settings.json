@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "rocketseat"
+  ],
+  "editor.codeActionsOnSave": {
+    // Corrigir erros de lint quando salvar o arquivo
+    "source.fixAll.eslint": true
+  }
+}

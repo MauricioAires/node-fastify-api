@@ -6,7 +6,9 @@
 
 ## Tecnologias
 
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Typescript](https://www.typescriptlang.org/)
+- [Fastify](https://fastify.dev/)
+- [Knex.js](https://knexjs.org/)
 
 
 ## Instalação
@@ -20,6 +22,12 @@ yarn
 ```bash
 # Iniciar arquivo de configurações do typescript
 $ npx tsc --init
+
+# Comando para identificar erros de lint
+$ yarn eslint src --ext .ts
+
+# Comando para identificar erros de lint e corrigir
+$ yarn eslint src --ext .ts --fix
 
 ```
 
