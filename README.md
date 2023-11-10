@@ -13,6 +13,14 @@
 - [Vitest](https://vitest.dev/)
 - [Supertest](https://github.com/ladjs/supertest#readme)
 
+*Opções de serviço de deploy*
+
+- [Render](https://render.com/)
+- [Fly](https://fly.io/)
+- [Railway](https://railway.app/)
+
+
+
 ## Instalação
 
 ```sh
@@ -36,6 +44,7 @@ $ yarn knex migrate:latest
 
 # Desfazer a  ultima migration
 $ yarn knex migrate:rollback
+
 
 ```
 ## Requisitos
