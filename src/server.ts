@@ -1,23 +1,12 @@
-import fastify from 'fastify'
-import { knex } from './database'
-
-const app = fastify()
-
-// GET POST PUT PATCH DELETE
-// o primeiro parâmetro apos apos a barra é o RECURSO!
-
-app.get('/hello', async () => {
-  const test = await knex('sqlite_schema').select('*')
-
-  return test
-})
+import { app } from './app'
+import { env } from './env'
 
 app
   .listen({
-    port: 3333,
+    port: env.PORT,
   })
   .then(() => {
-    console.log('HTTP server running on port 3333')
+    console.log(`HTTP server running on port ${env.PORT}`)
   })
 
 /**
